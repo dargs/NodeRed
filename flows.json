@@ -972,50 +972,6 @@
         "collapse": false
     },
     {
-        "id": "8962615c.444ee",
-        "type": "ui_group",
-        "z": "",
-        "name": "Wind",
-        "tab": "",
-        "order": 4,
-        "disp": false,
-        "width": "4",
-        "collapse": false
-    },
-    {
-        "id": "7768ad44.148454",
-        "type": "ui_group",
-        "z": "",
-        "name": "Luftfeuchtigkeit",
-        "tab": "",
-        "order": 4,
-        "disp": false,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "a28848b9.636f28",
-        "type": "ui_group",
-        "z": "",
-        "name": "Condition",
-        "tab": "",
-        "order": 2,
-        "disp": false,
-        "width": "2",
-        "collapse": false
-    },
-    {
-        "id": "1c1a4394.d97f1c",
-        "type": "ui_group",
-        "z": "",
-        "name": "Forecast",
-        "tab": "",
-        "order": 6,
-        "disp": false,
-        "width": "8",
-        "collapse": false
-    },
-    {
         "id": "5486ad63.f06294",
         "type": "ui_group",
         "z": "",
@@ -1071,60 +1027,6 @@
         "willTopic": "",
         "willQos": "0",
         "willPayload": ""
-    },
-    {
-        "id": "4b8f8bd8.43dd64",
-        "type": "ui_group",
-        "z": "",
-        "name": "SDR VFO A - San Francisco Memory Bank",
-        "tab": "",
-        "order": 3,
-        "disp": true,
-        "width": "7",
-        "collapse": false
-    },
-    {
-        "id": "5b1030f7.9aeea",
-        "type": "ui_group",
-        "z": "",
-        "name": "Reciver Status",
-        "tab": "",
-        "order": 1,
-        "disp": false,
-        "width": "15",
-        "collapse": false
-    },
-    {
-        "id": "86f99e30.bd869",
-        "type": "ui_group",
-        "z": "",
-        "name": "Device Demo",
-        "tab": "",
-        "order": 2,
-        "disp": true,
-        "width": "6"
-    },
-    {
-        "id": "5e68df5e.f7016",
-        "type": "ui_group",
-        "z": "",
-        "name": "Latency Guage",
-        "tab": "",
-        "order": 2,
-        "disp": true,
-        "width": "4",
-        "collapse": true
-    },
-    {
-        "id": "d45fd72.e046528",
-        "type": "ui_group",
-        "z": "",
-        "name": "SERVER RACK",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "4",
-        "collapse": true
     },
     {
         "id": "68a44d5b.0a65b4",
@@ -1302,24 +1204,6 @@
         "allowMessagePassthrough": true
     },
     {
-        "id": "e38ecb52.11dd18",
-        "type": "ui_group",
-        "name": "Group 1",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": 6
-    },
-    {
-        "id": "bb712e37.4d7da",
-        "type": "ui_group",
-        "name": "Group 1",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": 6
-    },
-    {
         "id": "f6761ffb.7dc6f",
         "type": "ui_spacer",
         "name": "spacer",
@@ -1327,17 +1211,6 @@
         "order": 9,
         "width": 6,
         "height": 1
-    },
-    {
-        "id": "ac72fcaa.5433b",
-        "type": "ui_group",
-        "z": "",
-        "name": "Camera",
-        "tab": "b4b4d668.d36518",
-        "order": 1,
-        "disp": true,
-        "width": "24",
-        "collapse": false
     },
     {
         "id": "b4b4d668.d36518",
@@ -1831,7 +1704,7 @@
         "type": "debug",
         "z": "f89d6462.a45d98",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2106,7 +1979,7 @@
         "type": "debug",
         "z": "29c8c095.f067d",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2182,7 +2055,7 @@
         "type": "debug",
         "z": "29c8c095.f067d",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2199,25 +2072,14 @@
         "server": "8ad492c4.65edc",
         "name": "LIFX 1",
         "lightID": "d073d500c235",
-        "x": 90,
-        "y": 260,
+        "x": 70,
+        "y": 400,
         "wires": [
             [
-                "46fb8abb.85d854",
-                "7fe0d771.b20428"
+                "7fe0d771.b20428",
+                "4ea0037f.7bf0cc"
             ]
         ]
-    },
-    {
-        "id": "2e693434.51654c",
-        "type": "node-lifx-in",
-        "z": "92c87692.1cc048",
-        "server": "8ad492c4.65edc",
-        "name": "LIFX 1",
-        "lightID": "d073d500c235",
-        "x": 550,
-        "y": 100,
-        "wires": []
     },
     {
         "id": "725941ff.2c537",
@@ -2942,54 +2804,14 @@
         "wires": []
     },
     {
-        "id": "ada28774.0970e8",
-        "type": "inject",
-        "z": "92c87692.1cc048",
-        "name": "",
-        "topic": "on",
-        "payload": "true",
-        "payloadType": "bool",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 170,
-        "y": 100,
-        "wires": [
-            [
-                "2e693434.51654c"
-            ]
-        ]
-    },
-    {
-        "id": "83b76f44.eac9",
-        "type": "inject",
-        "z": "92c87692.1cc048",
-        "name": "",
-        "topic": "on",
-        "payload": "false",
-        "payloadType": "bool",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 170,
-        "y": 160,
-        "wires": [
-            [
-                "2e693434.51654c"
-            ]
-        ]
-    },
-    {
         "id": "c17a0e51.026de",
         "type": "node-lifx-in",
         "z": "92c87692.1cc048",
         "server": "8ad492c4.65edc",
         "name": "LIFX 2",
         "lightID": "d073d5015037",
-        "x": 930,
-        "y": 740,
+        "x": 1030,
+        "y": 1060,
         "wires": []
     },
     {
@@ -3004,8 +2826,8 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "x": 710,
-        "y": 620,
+        "x": 270,
+        "y": 1200,
         "wires": [
             [
                 "c17a0e51.026de",
@@ -3025,8 +2847,8 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "x": 710,
-        "y": 660,
+        "x": 270,
+        "y": 1240,
         "wires": [
             [
                 "c17a0e51.026de",
@@ -3041,8 +2863,8 @@
         "server": "8ad492c4.65edc",
         "name": "LIFX 2",
         "lightID": "d073d5015037",
-        "x": 130,
-        "y": 740,
+        "x": 150,
+        "y": 1060,
         "wires": [
             [
                 "8db4f17b.7a59a"
@@ -3057,7 +2879,7 @@
         "label": "LIFX 2",
         "tooltip": "",
         "group": "bf7639b5.36f358",
-        "order": 2,
+        "order": 4,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -3072,43 +2894,12 @@
         "offvalueType": "bool",
         "officon": "",
         "offcolor": "",
-        "x": 510,
-        "y": 740,
+        "x": 530,
+        "y": 1060,
         "wires": [
             [
                 "55a830a4.269b6",
                 "7f6d09ee.9e8e38"
-            ]
-        ]
-    },
-    {
-        "id": "46fb8abb.85d854",
-        "type": "ui_switch",
-        "z": "92c87692.1cc048",
-        "name": "",
-        "label": "LIFX 1",
-        "tooltip": "",
-        "group": "bf7639b5.36f358",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "decouple": "true",
-        "topic": "payload.on",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 590,
-        "y": 240,
-        "wires": [
-            [
-                "cacc9bf5.7922c8"
             ]
         ]
     },
@@ -3121,7 +2912,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 330,
-        "y": 740,
+        "y": 1060,
         "wires": [
             [
                 "7ede41e1.d6695"
@@ -3136,8 +2927,8 @@
         "func": "msg.payload.on = msg.payload;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 710,
-        "y": 740,
+        "x": 730,
+        "y": 1060,
         "wires": [
             [
                 "c17a0e51.026de"
@@ -3148,7 +2939,7 @@
         "id": "568bbbef.73b7d4",
         "type": "inject",
         "z": "92c87692.1cc048",
-        "name": "",
+        "name": "DISCO",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -3156,8 +2947,8 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "x": 760,
-        "y": 540,
+        "x": 1190,
+        "y": 820,
         "wires": [
             [
                 "fcc9d11e.8105f"
@@ -3172,11 +2963,12 @@
         "func": "msg.payload = {\n  \"isTransient\": true,\n  \"color\": { \"hue\": 0, \"saturation\": 65535, \"brightness\": 65535, \"kelvin\": 3500 },\n  \"period\": 2000,\n  \"cycles\": 3,\n  \"skewRatio\": 0,\n  \"waveform\": \"SINE\"  // one of SAW, SINE, HALF_SINE, TRIANGLE, PULSE\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 910,
-        "y": 540,
+        "x": 1350,
+        "y": 820,
         "wires": [
             [
-                "c17a0e51.026de"
+                "c17a0e51.026de",
+                "1f5e586e.28d508"
             ]
         ]
     },
@@ -3185,7 +2977,7 @@
         "type": "ui_colour_picker",
         "z": "92c87692.1cc048",
         "name": "",
-        "label": "LIFX 2",
+        "label": "LIFX 2 RGB",
         "group": "bf7639b5.36f358",
         "format": "rgb",
         "outformat": "object",
@@ -3197,13 +2989,13 @@
         "showLightness": false,
         "square": "true",
         "dynOutput": "false",
-        "order": 3,
+        "order": 5,
         "width": 0,
         "height": 0,
         "passthru": true,
         "topic": "",
-        "x": 530,
-        "y": 800,
+        "x": 510,
+        "y": 1000,
         "wires": [
             [
                 "625c1984.efcb28"
@@ -3218,8 +3010,8 @@
         "func": "msg.payload = {\"rgb\": [ msg.payload.r, msg.payload.g, msg.payload.b ] }\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 720,
-        "y": 800,
+        "x": 760,
+        "y": 1000,
         "wires": [
             [
                 "c17a0e51.026de"
@@ -3381,7 +3173,7 @@
         "type": "debug",
         "z": "f89d6462.a45d98",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3440,42 +3232,6 @@
         "wires": []
     },
     {
-        "id": "f6245d0d.72ebe",
-        "type": "function",
-        "z": "92c87692.1cc048",
-        "name": "LIFX FX",
-        "func": "msg.payload = {\"bri\" : 100};\nreturn msg;\n\n/*\nmsg.payload = {\n  \"isTransient\": true,\n  \"color\": { \"hue\": 0, \"saturation\": 65535, \"brightness\": 65535, \"kelvin\": 3500 },\n  \"period\": 2000,\n  \"cycles\": 3,\n  \"skewRatio\": 0,\n  \"waveform\": \"SINE\"  // one of SAW, SINE, HALF_SINE, TRIANGLE, PULSE\n*/",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 340,
-        "y": 60,
-        "wires": [
-            [
-                "2e693434.51654c"
-            ]
-        ]
-    },
-    {
-        "id": "278dbbf6.7ddc64",
-        "type": "inject",
-        "z": "92c87692.1cc048",
-        "name": "trigger",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 170,
-        "y": 60,
-        "wires": [
-            [
-                "f6245d0d.72ebe"
-            ]
-        ]
-    },
-    {
         "id": "7fe0d771.b20428",
         "type": "function",
         "z": "92c87692.1cc048",
@@ -3483,28 +3239,10 @@
         "func": "msg.payload = msg.payload.on;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 390,
-        "y": 240,
+        "x": 270,
+        "y": 400,
         "wires": [
-            [
-                "46fb8abb.85d854"
-            ]
-        ]
-    },
-    {
-        "id": "cacc9bf5.7922c8",
-        "type": "function",
-        "z": "92c87692.1cc048",
-        "name": "Topic to Payload",
-        "func": "msg.payload.on = msg.payload;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 810,
-        "y": 320,
-        "wires": [
-            [
-                "1f5e586e.28d508"
-            ]
+            []
         ]
     },
     {
@@ -3514,8 +3252,8 @@
         "server": "8ad492c4.65edc",
         "name": "LIFX 1",
         "lightID": "d073d500c235",
-        "x": 990,
-        "y": 320,
+        "x": 1210,
+        "y": 160,
         "wires": []
     },
     {
@@ -3526,19 +3264,19 @@
         "op2": "false",
         "op1type": "bool",
         "op2type": "bool",
-        "duration": "1",
+        "duration": "15",
         "extend": true,
-        "units": "min",
+        "units": "s",
         "reset": "",
         "bytopic": "all",
         "name": "",
-        "x": 370,
-        "y": 320,
+        "x": 390,
+        "y": 600,
         "wires": [
             [
-                "cacc9bf5.7922c8",
                 "a2f87594.4192a8",
-                "14757847.944778"
+                "14757847.944778",
+                "c93c0736.45f108"
             ]
         ]
     },
@@ -3551,12 +3289,13 @@
         "qos": "2",
         "datatype": "auto",
         "broker": "9622b515.1f1858",
-        "x": 150,
-        "y": 340,
+        "x": 130,
+        "y": 600,
         "wires": [
             [
                 "2a5b20b7.8a2c9",
-                "b881abc.224d558"
+                "b881abc.224d558",
+                "c897ace9.ca4a3"
             ]
         ]
     },
@@ -3572,8 +3311,8 @@
         "label": "TRIGGER",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 600,
-        "y": 300,
+        "x": 700,
+        "y": 680,
         "wires": []
     },
     {
@@ -3585,8 +3324,8 @@
         "measurement": "segmeter",
         "precision": "s",
         "retentionPolicy": "",
-        "x": 790,
-        "y": 380,
+        "x": 910,
+        "y": 760,
         "wires": []
     },
     {
@@ -3597,8 +3336,8 @@
         "func": "\nmsg.payload = {LaundryPIR3: msg.payload};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 550,
-        "y": 380,
+        "x": 650,
+        "y": 760,
         "wires": [
             [
                 "159b9393.705e7c"
@@ -3710,8 +3449,8 @@
         "func": "if (msg.payload === 'ON') msg.payload = 1;\nelse msg.payload = 0;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 380,
-        "y": 380,
+        "x": 460,
+        "y": 760,
         "wires": [
             [
                 "16f15a4f.531d76"
@@ -4421,29 +4160,6 @@
         "wires": []
     },
     {
-        "id": "61d2b0c2.b6ce3",
-        "type": "trigger",
-        "z": "29c8c095.f067d",
-        "op1": "on",
-        "op2": "off",
-        "op1type": "str",
-        "op2type": "str",
-        "duration": "-2",
-        "extend": false,
-        "units": "s",
-        "reset": "",
-        "bytopic": "all",
-        "name": "",
-        "x": 460,
-        "y": 1320,
-        "wires": [
-            [
-                "18ef49bd.2ddc56",
-                "b93a5708.fd7538"
-            ]
-        ]
-    },
-    {
         "id": "b93a5708.fd7538",
         "type": "debug",
         "z": "29c8c095.f067d",
@@ -4456,69 +4172,6 @@
         "x": 670,
         "y": 1400,
         "wires": []
-    },
-    {
-        "id": "ae52d1a.e38053",
-        "type": "inject",
-        "z": "29c8c095.f067d",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "x": 270,
-        "y": 1260,
-        "wires": [
-            [
-                "61d2b0c2.b6ce3"
-            ]
-        ]
-    },
-    {
-        "id": "54714c8b.491824",
-        "type": "trigger",
-        "z": "29c8c095.f067d",
-        "op1": "off",
-        "op2": "off",
-        "op1type": "str",
-        "op2type": "str",
-        "duration": "-2",
-        "extend": false,
-        "units": "s",
-        "reset": "",
-        "bytopic": "all",
-        "name": "",
-        "x": 800,
-        "y": 1260,
-        "wires": [
-            [
-                "b43f0e3a.80528",
-                "b93a5708.fd7538"
-            ]
-        ]
-    },
-    {
-        "id": "555c30d1.77e52",
-        "type": "inject",
-        "z": "29c8c095.f067d",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "x": 490,
-        "y": 1260,
-        "wires": [
-            [
-                "54714c8b.491824"
-            ]
-        ]
     },
     {
         "id": "e4452a01.9b6738",
@@ -5791,8 +5444,8 @@
         "characteristicProperties": "{}",
         "waitForSetupMsg": false,
         "outputs": 2,
-        "x": 1010,
-        "y": 160,
+        "x": 990,
+        "y": 620,
         "wires": [
             [],
             []
@@ -5880,7 +5533,7 @@
         "id": "14757847.944778",
         "type": "change",
         "z": "92c87692.1cc048",
-        "name": "topic",
+        "name": "Payload to MotionDetected",
         "rules": [
             {
                 "t": "change",
@@ -5906,8 +5559,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 630,
-        "y": 160,
+        "x": 760,
+        "y": 620,
         "wires": [
             [
                 "ec6ea064.d6ea7"
@@ -6252,7 +5905,7 @@
         "type": "debug",
         "z": "29c8c095.f067d",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7512,7 +7165,7 @@
         "type": "debug",
         "z": "eaa9c18e.51913",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7595,7 +7248,7 @@
         "type": "debug",
         "z": "eaa9c18e.51913",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7900,7 +7553,7 @@
         "type": "debug",
         "z": "29c8c095.f067d",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7963,8 +7616,8 @@
         "characteristicProperties": "{\"Brightness\":true}",
         "waitForSetupMsg": false,
         "outputs": 2,
-        "x": 590,
-        "y": 980,
+        "x": 610,
+        "y": 1300,
         "wires": [
             [
                 "ac6320e8.45ded",
@@ -7980,14 +7633,14 @@
         "type": "debug",
         "z": "92c87692.1cc048",
         "name": "HomeKit Out",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "true",
         "targetType": "full",
-        "x": 910,
-        "y": 980,
+        "x": 930,
+        "y": 1300,
         "wires": []
     },
     {
@@ -7998,8 +7651,8 @@
         "func": "var input = msg.payload;\nif (input < 101){\n    if (input < 1) {\n        msg.payload = {\n        \"On\": false\n    }\n    }\n    else {\n        msg.payload = {\n        \"Brightness\": input,\n        \"On\": true\n    }\n    }\n    return msg;\n}",
         "outputs": 1,
         "noerr": 0,
-        "x": 500,
-        "y": 1060,
+        "x": 520,
+        "y": 1380,
         "wires": [
             [
                 "b8b1d252.9aaa8"
@@ -8014,11 +7667,13 @@
         "func": "var b = context.get('b')||0;\nif(msg.payload.Brightness){\n    b = msg.payload.Brightness;\n    context.set('b',b);\n    msg.payload=b\n}\n\n// Uncomment lines 9 and 20 to prevent looping\n//if (msg.hap.context !== undefined) {\n    if(msg.payload.Brightness === 0){\n        msg.payload = 0\n    }\n    if(msg.payload.On === false){\n        msg.payload = 0\n    }\n    if(msg.payload.On === true){\n        msg.payload = b\n    }\n    return msg\n//}",
         "outputs": 1,
         "noerr": 0,
-        "x": 800,
-        "y": 1060,
+        "x": 820,
+        "y": 1380,
         "wires": [
             [
-                "5dd43af2.67a114"
+                "5dd43af2.67a114",
+                "82379cd3.b6f86",
+                "c17a0e51.026de"
             ]
         ]
     },
@@ -8031,8 +7686,8 @@
         "high": "100",
         "inte": "true",
         "property": "payload",
-        "x": 320,
-        "y": 1060,
+        "x": 300,
+        "y": 1380,
         "wires": [
             [
                 "69267e10.789f9"
@@ -8044,13 +7699,14 @@
         "type": "debug",
         "z": "92c87692.1cc048",
         "name": "Brightness Out",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "payload",
-        "x": 1020,
-        "y": 1060,
+        "targetType": "msg",
+        "x": 1040,
+        "y": 1380,
         "wires": []
     },
     {
@@ -8065,8 +7721,8 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "x": 160,
-        "y": 1060,
+        "x": 140,
+        "y": 1380,
         "wires": [
             [
                 "e044de98.4130f"
@@ -8103,8 +7759,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 430,
-        "y": 980,
+        "x": 450,
+        "y": 1300,
         "wires": [
             [
                 "b8b1d252.9aaa8"
@@ -8130,10 +7786,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 760,
-        "y": 900,
+        "x": 820,
+        "y": 1200,
         "wires": [
             [
+                "ecabda2b.5a0fd8",
                 "c17a0e51.026de"
             ]
         ]
@@ -8200,5 +7857,468 @@
         "y": 1200,
         "wires": [],
         "info": "HELLO"
+    },
+    {
+        "id": "84705498.a57148",
+        "type": "homekit-service",
+        "z": "92c87692.1cc048",
+        "isParent": true,
+        "bridge": "a92ca4e5.971358",
+        "parentService": "",
+        "name": "LIFX1",
+        "serviceName": "Lightbulb",
+        "topic": "",
+        "filter": false,
+        "manufacturer": "Default Manufacturer",
+        "model": "Default Model",
+        "serialNo": "Default Serial Number",
+        "firmwareRev": "",
+        "hardwareRev": "",
+        "softwareRev": "",
+        "cameraConfigVideoProcessor": "",
+        "cameraConfigSource": "",
+        "cameraConfigStillImageSource": "",
+        "cameraConfigMaxStreams": "",
+        "cameraConfigMaxWidth": "",
+        "cameraConfigMaxHeight": "",
+        "cameraConfigMaxFPS": "",
+        "cameraConfigMaxBitrate": "",
+        "cameraConfigVideoCodec": "",
+        "cameraConfigAudioCodec": "",
+        "cameraConfigAudio": false,
+        "cameraConfigPacketSize": "",
+        "cameraConfigVerticalFlip": false,
+        "cameraConfigHorizontalFlip": false,
+        "cameraConfigMapVideo": "",
+        "cameraConfigMapAudio": "",
+        "cameraConfigVideoFilter": "",
+        "cameraConfigAdditionalCommandLine": "",
+        "cameraConfigDebug": false,
+        "cameraConfigInterfaceName": "",
+        "characteristicProperties": "{\"Brightness\":true}",
+        "waitForSetupMsg": false,
+        "outputs": 2,
+        "x": 590,
+        "y": 320,
+        "wires": [
+            [
+                "7ce988ca.e8a6a8",
+                "83a8946f.7eae68",
+                "a65ebfd6.2e8ff"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7ce988ca.e8a6a8",
+        "type": "change",
+        "z": "92c87692.1cc048",
+        "name": "Homekit to Tasmota",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.On",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 900,
+        "y": 320,
+        "wires": [
+            [
+                "1f5e586e.28d508"
+            ]
+        ]
+    },
+    {
+        "id": "82379cd3.b6f86",
+        "type": "ui_slider",
+        "z": "92c87692.1cc048",
+        "name": "",
+        "label": "LIFX 2",
+        "tooltip": "",
+        "group": "bf7639b5.36f358",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 570,
+        "y": 1460,
+        "wires": [
+            [
+                "69267e10.789f9"
+            ]
+        ]
+    },
+    {
+        "id": "ecabda2b.5a0fd8",
+        "type": "debug",
+        "z": "92c87692.1cc048",
+        "name": "HomeKit Out",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1170,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "ab6e0d47.f3a61",
+        "type": "function",
+        "z": "92c87692.1cc048",
+        "name": "Brightness to HomeKit",
+        "func": "var input = msg.payload;\nif (input < 101){\n    if (input < 1) {\n        msg.payload = {\n        \"On\": false\n    }\n    }\n    else {\n        msg.payload = {\n        \"Brightness\": input,\n        \"On\": true\n    }\n    }\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 620,
+        "y": 260,
+        "wires": [
+            [
+                "84705498.a57148"
+            ]
+        ]
+    },
+    {
+        "id": "83a8946f.7eae68",
+        "type": "function",
+        "z": "92c87692.1cc048",
+        "name": "Brightness to Integer",
+        "func": "var b = context.get('b')||0;\nif(msg.payload.Brightness){\n    b = msg.payload.Brightness;\n    context.set('b',b);\n    msg.payload=b\n}\n\n// Uncomment lines 9 and 20 to prevent looping\n//if (msg.hap.context !== undefined) {\n    if(msg.payload.Brightness === 0){\n        msg.payload = 0\n    }\n    if(msg.payload.On === false){\n        msg.payload = 0\n    }\n    if(msg.payload.On === true){\n        msg.payload = b\n    }\n    return msg\n//}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 520,
+        "y": 140,
+        "wires": [
+            [
+                "1f5e586e.28d508",
+                "76aee4bd.5a24bc"
+            ]
+        ]
+    },
+    {
+        "id": "7ed57a6e.524014",
+        "type": "ui_colour_picker",
+        "z": "92c87692.1cc048",
+        "name": "",
+        "label": "LIFX 1 RGB",
+        "group": "bf7639b5.36f358",
+        "format": "rgb",
+        "outformat": "object",
+        "showSwatch": true,
+        "showPicker": true,
+        "showValue": true,
+        "showHue": true,
+        "showAlpha": false,
+        "showLightness": false,
+        "square": "true",
+        "dynOutput": "false",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "",
+        "x": 850,
+        "y": 100,
+        "wires": [
+            [
+                "89e2da16.090a38"
+            ]
+        ]
+    },
+    {
+        "id": "89e2da16.090a38",
+        "type": "function",
+        "z": "92c87692.1cc048",
+        "name": "LIFX FX",
+        "func": "msg.payload = {\"rgb\": [ msg.payload.r, msg.payload.g, msg.payload.b ] }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1000,
+        "y": 100,
+        "wires": [
+            [
+                "1f5e586e.28d508"
+            ]
+        ]
+    },
+    {
+        "id": "a65ebfd6.2e8ff",
+        "type": "debug",
+        "z": "92c87692.1cc048",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1290,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4ea0037f.7bf0cc",
+        "type": "debug",
+        "z": "92c87692.1cc048",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 130,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "ed92fc2e.703c7",
+        "type": "inject",
+        "z": "92c87692.1cc048",
+        "name": "",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 190,
+        "y": 540,
+        "wires": [
+            [
+                "2a5b20b7.8a2c9"
+            ]
+        ]
+    },
+    {
+        "id": "c897ace9.ca4a3",
+        "type": "debug",
+        "z": "92c87692.1cc048",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 150,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "1878e21a.f9590e",
+        "type": "node-lifx-in",
+        "z": "92c87692.1cc048",
+        "server": "8ad492c4.65edc",
+        "name": "LIFX 1",
+        "lightID": "d073d500c235",
+        "x": 690,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "76aee4bd.5a24bc",
+        "type": "ui_slider",
+        "z": "92c87692.1cc048",
+        "name": "",
+        "label": "LIFX 1",
+        "tooltip": "",
+        "group": "bf7639b5.36f358",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 610,
+        "y": 200,
+        "wires": [
+            [
+                "ab6e0d47.f3a61"
+            ]
+        ]
+    },
+    {
+        "id": "c93c0736.45f108",
+        "type": "function",
+        "z": "92c87692.1cc048",
+        "name": "PIR TRUE= BRI=100",
+        "func": "var msgTwo = [];\n\nif(msg.payload === true)\n    {\n        msg.payload = {\"bri\": 100, \"on\": true };\n        msgTwo.payload = {\"On\":true, \"Brightness\": 100};\n        }\n        \n if(msg.payload === false)\n    {\n        msg.payload = {\"bri\": 0, \"on\": false };\n        msgTwo.payload = {\"On\":false, \"Brightness\": 0};\n        }       \n        \n        \nreturn [msg,msgTwo.payload];",
+        "outputs": 2,
+        "noerr": 0,
+        "x": 460,
+        "y": 500,
+        "wires": [
+            [
+                "1878e21a.f9590e",
+                "94ac8166.eac3b"
+            ],
+            [
+                "d6b4f2d9.ed6cd",
+                "f5e7362d.983a28"
+            ]
+        ]
+    },
+    {
+        "id": "94ac8166.eac3b",
+        "type": "debug",
+        "z": "92c87692.1cc048",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 890,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "d6b4f2d9.ed6cd",
+        "type": "debug",
+        "z": "92c87692.1cc048",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 890,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "f5e7362d.983a28",
+        "type": "change",
+        "z": "92c87692.1cc048",
+        "name": "payload",
+        "rules": [
+            {
+                "t": "move",
+                "p": "On",
+                "pt": "msg",
+                "to": "payload.On",
+                "tot": "msg"
+            },
+            {
+                "t": "move",
+                "p": "Brightness",
+                "pt": "msg",
+                "to": "payload.Brightness",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 400,
+        "wires": [
+            [
+                "84705498.a57148",
+                "5f7f2956.aaa6c8"
+            ]
+        ]
+    },
+    {
+        "id": "5f7f2956.aaa6c8",
+        "type": "debug",
+        "z": "92c87692.1cc048",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 890,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "edb94e52.64012",
+        "type": "inject",
+        "z": "29c8c095.f067d",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "x": 710,
+        "y": 1300,
+        "wires": [
+            [
+                "7df8ff80.4eb73"
+            ]
+        ]
+    },
+    {
+        "id": "7df8ff80.4eb73",
+        "type": "trigger",
+        "z": "29c8c095.f067d",
+        "op1": "on",
+        "op2": "off",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "1",
+        "extend": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "name": "",
+        "x": 900,
+        "y": 1300,
+        "wires": [
+            [
+                "c267d03a.e7f7d"
+            ]
+        ]
+    },
+    {
+        "id": "c267d03a.e7f7d",
+        "type": "mqtt out",
+        "z": "29c8c095.f067d",
+        "name": "",
+        "topic": "esp32/output",
+        "qos": "",
+        "retain": "",
+        "broker": "9622b515.1f1858",
+        "x": 1080,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "79b02d12.57a564",
+        "type": "comment",
+        "z": "29c8c095.f067d",
+        "name": "Inject 2sec + On/Off 1 Sec",
+        "info": "Injects every 2 secs.\n1sec delay between On and Off",
+        "x": 930,
+        "y": 1240,
+        "wires": []
     }
 ]
